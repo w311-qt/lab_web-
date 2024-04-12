@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <script src="./script/load_time.js"></script>
+  <script src="./script/active_menu.js"></script>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости спорта</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="body">
+<header class="header">
+  <img class="homepage_logo" src="logo.png"  alt="error">
+  <h1 class="heading_name">Sportnews</h1>
+  <p><em>always in game</em></p>
+  <div class="social_links">
+    <a class="social_item" href="#">Insta</a>
+    <a class="social_item" href="#">Twitter</a>
+    <a class="social_item" href="#">Facebook</a>
+    <a class="social_item" href="#">VK</a>
+    <a class="social_item" href="#">  +7 (228) 322 13 37</a>
+  </div>
+  <nav class="navigation">
+    <ul class="homepage_navigation">
+      <li class="homepage_navigation_list"><a class="homepage_navigation_list_item" href="index2.html">Главная</a></li>
+      <li class="homepage_navigation_list"><a class="homepage_navigation_list_item" href="contacts.html">Контакты</a></li>
+      <li class="homepage_navigation_list"><a class="homepage_navigation_list_item" href="todo.html">Голосование</a></li>
+      <li class="homepage_navigation_list"><a class="homepage_navigation_list_item" href="#">Поиск</a></li>
+      <li class="homepage_navigation_list"><a class="homepage_navigation_list_item" href="#">О нас</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+  <section class="news">
+    <h2>Основные новости</h2>
+    <a class="sports">Последние события</a>
+    <a class="sports football" href="../views/football.hbs">Футбол</a>
+    <a class="sports">Баскетбол</a>
+    <a class="sports">Хоккей</a>
+    <a class="sports">Воллейбол</a>
+  </section>
+
+  <section class="cyber">
+    <h2>Киберспорт</h2>
+    <a class="cyber_item" href="../views/cyber.hbs"> Новости о виртуальном спорте</a>
+  </section>
+  <section class="schedule">
+    <h2>Расписание матчей</h2>
+    <section class="schedule">
+      <img src="schedule.png"  alt="error">
+    </section>
+    <p>Дополнительная информация.</p>
+  </section>
+  <aside class="ASCII">
+    <h4> ASCII-рисуночек: </h4>
+    <pre>
+  ⚽️
+     / \
+    /   \
+   /_____\
+   |  |  |
+   |  |  |
+   |  |  |
+   |  |  |
+   |||
+    </pre>
+  </aside>
+  <article class="code_snipp">
+    <h2>Сниппет кода:</h2>
+    <p><dfn>не знаю для чего, по заданию нужно было</dfn></p>
+    <code class="code">
+      function greet() {
+      console.log("Спорт - сила!");
+      }
+    </code>
+  </article>
+  <section class="quote">
+    <h2>Цитата:</h2>
+    <blockquote class="blockquote">
+      <q><em>Одна ошибка и ты ОШИБСЯ</em></q>
+      <cite>--Криштиану Роналду</cite>
+    </blockquote>
+  </section>
+  <section class="formula">
+    <h2> Формула: </h2>
+    <p>Скорость света в вакууме: <sup>c</sup> = <em>299,792,458</em> м/с<sup>2</sup></p>
+  </section>
+  <style>.swiper {
+    width: 1000px;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    width: 60%;
+  }
+
+  </style>
+  <h2>Галерея:</h2>
+  <div class="gallery">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="gallery_item" src="https://pbs.twimg.com/media/FSZfenVaUAItA-v.jpg:large" alt="404"></div>
+        <div class="swiper-slide"><img class="gallery_item" src="img/ronaldo.jpg" alt="404"></div>
+        <div class="swiper-slide"><img class="gallery_item" src="img/images.jpg" alt="404"></div>
+        <div class="swiper-slide"><img class="gallery_item"src="https://cdnn21.img.ria.ru/images/07e7/0a/1c/1905889680_0:0:1920:1080_1920x0_80_0_0_fc6f8c1aa71d548aa005fd9d84c95139.jpg"></div>
+        <div class="swiper-slide"><img class="gallery_item"src="https://sun9-63.userapi.com/impg/PAdHrLOBbkLCSM3Zbnw4piSSk9jr1yapBlLh4w/n2d6w6dYZOM.jpg?size=759x556&quality=96&sign=95ed4be76777657e6451bd4fb2bc97a2&c_uniq_tag=-sFotcR26YyIbaJOjvf5HpL0qwiEOTAzVfxcEEwc_8M&type=album"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="table-container">
+    <div class="table-scroll">
+      <table class="table">
+        <thead class="thead">
+        <tr class="tr">
+          <th class="th">Команда</th>
+          <th class="th">Очки</th>
+          <th class="th">Игры</th>
+          <th class="th">Забито голов</th>
+          <th class="th">Пропущено голов</th>
+          <th class="th">Разница мячей</th>
+          <th class="th">Текущая форма</th>
+        </tr>
+        </thead>
+        <tbody class="tbody">
+        <tr class="tr">
+          <td class="td">Ливерпуль</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">16</td>
+          <td class="td">8</td>
+          <td class="td">+8</td>
+          <td class="td">ВВВНВ</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        <tr class="tr">
+          <td class="td">Тоттенхем</td>
+          <td class="td">24</td>
+          <td class="td">10</td>
+          <td class="td">15</td>
+          <td class="td">9</td>
+          <td class="td">+6</td>
+          <td class="td">ВВПВН</td>
+        </tr>
+        </tbody>
+      </table>
+    </div></div>
+  <section class="section_load_time">
+    <h3 class="time_title">Страница загрузилась всего за:</h3>
+    <p class="time__duration"></p>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script/galley_swiper.js"></script>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2023 made by w311</p>
+  <img class="social_img" src="img/insta.png" alt="404">
+  <img class="social_img" src="img/twitter.png" alt="404">
+  <img class="social_img" src="img/facebook.png" alt="404">
+  <img class="social_img" src="img/VK_Logo.png" alt="404">
+  <img class="social_img" src="img/phone.png" alt="404">
+</footer>
+</body>
+</html>
