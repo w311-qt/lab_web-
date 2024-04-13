@@ -1,0 +1,462 @@
+.body {
+  background-color: #80ffcc;
+  font-family: Arial, sans-serif;
+  font-color: #80ffcc;
+  margin: 0;
+  padding: 5px;
+  text-align: left;
+}
+
+.header {
+  background-color:#00804d;
+  color: #001a0f;
+  text-align: left;
+}
+.homepage_navigation_list_item {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--font-color);
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.homepage_navigation_list_item {
+    text-decoration: underline;
+}
+
+.heading {
+  font-size: 1.875rem;
+  margin-bottom: 20px;
+
+}
+
+.social_links {
+  background-color: #f2f2f2;
+  font-size: 1.2rem;
+  text-align: right;
+  word-spacing: 0.4rem;
+}
+
+.social_item {
+  color: #000000;
+  font-size: 1rem;
+  letter-spacing: 0.2rem
+}
+
+.social_img{
+  width: 20px;
+  height: 20px;
+  display: inline;
+}
+.navigation {
+  background-color: #33ffad;
+  padding: 10px;
+}
+
+.navigation_item {
+  display: inline;
+  letter-spacing: 0.1rem;
+  color: #000000;
+}
+
+.news {
+  background-color: #00b3b3;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.sports {
+ background-color: #80ffcc;
+ font-size: 1.4rem;
+ font-style: italic;
+ font-weight: 500;
+}
+
+.code {
+  font-family: Consolas, monospace;
+  background-color: #42D1DB;
+  padding: 5px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+.schedule {
+  text-decoration: underline;
+  text-align:center;
+}
+
+.ASCII {
+  background-color: #6CF5B7;
+  text-align:center;
+}
+
+.blockquote {
+  text-decoration: underline;
+  background-color: #6CF5B7;
+  padding: 10px;
+  margin: 20px 0;
+  text-indent: 35rem;
+  text-transform: uppercase;
+}
+
+.footer {
+  text-align: left;
+  background-color: #333;
+  color: #fff;
+  text-transform: lowercase;
+}
+
+img {
+  border: 2px solid #ccc;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.homepage_navigation {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news{
+  display: block;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article {
+  grid-column: span 2;
+}
+.gallery{
+  display: flex;
+  align-items:center
+}
+
+.gallery_item{
+  display: flex;
+  width: 440px;
+  height: 440px;
+}
+
+.news-image{
+  width: 30px;
+  height: 30px;
+}
+.news_content_image{
+  width: 600px;
+  height: 400px;
+}
+
+.news-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .news-item {
+      background-color: lightgray;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .news-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    .news-content {
+      margin-top: 10px;
+    }
+
+    .news-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+.homepage_navigation_list_item.highlighted,
+.sports.highlighted,
+.cyber.highlighted {
+  background-color: #5F9EA0;
+  font-size: 1.45rem;
+}
+
+@media screen and (max-width: 980px) {
+  .code_snipp,
+  .formula,
+  .ASCII,
+  .table_item_scored,
+  .table_header_scored  {
+  display: none
+  }
+}
+
+.homepage_navigation_list_item.active,
+.homepage_navigation_list.active {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 980px) {
+  .cyber,
+  .news {
+  justify-content: center;
+  display: flex;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+
+.table {
+  font-color: #80ffcc;
+  display: grid;
+  border-collapse: collapse;
+  min-width: 90%;
+  gap: 0.325rem;
+  grid-template-columns:
+    minmax(150px, 1fr)
+    minmax(150px, 1.67fr)
+    minmax(150px, 1.67fr)
+    minmax(150px, 1.67fr)
+    minmax(150px, 1.67fr)
+    minmax(150px, 1.67fr)
+    minmax(150px, 1.67fr)
+}
+
+.thead,
+.tbody,
+.tr {
+  display: contents;
+}
+
+.th,
+.td {
+  padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.th {
+  position: sticky;
+  top: 0;
+  background: #6c7ae0;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.1rem;
+  font-color: #80ffcc;
+}
+
+.th:last-child {
+  border: 1;
+}
+
+.td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-color: #80ffcc;
+}
+
+.tr:nth-child(even) td {
+  background: #f8f6ff;
+}
+
+.cyber {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cyber_title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cyber_item {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#ratingForm {
+  margin-bottom: 20px;
+}
+
+.vote_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vote_form input,
+.vote_form select {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.vote_form .button,
+.comments-section .button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.main_todo {
+  text-align: center;
+  border: 3px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 40px;
+  background-color: tomato;
+}
+
+.vote_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.vote_input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+/* Стили для задач в списке */
+.list_items {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  margin-bottom: 5px;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.homepage_navigation_list:hover {  background-color: blue;
+}
+ a {  font-size: 2.5vh;
+  line-height: 4.8vh;}
+
+
+.table-container {
+  overflow-y: scroll; /* Включает вертикальную полосу прокрутки */
+  max-height: 400px; /* Устанавливает максимальную высоту контейнера для активации полосы прокрутки */
+}
+
+.table-scroll {
+  overflow-x: scroll; /* Включает горизонтальную полосу прокрутки при необходимости */
+  max-width: 1000px;
+}
+
+.templates-dropdown {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.comments-section {
+display: inline-block;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.comments-list{
+display: inline-block;
+  padding: 10px 20px;
+  background-color: #81D8D0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  border-color: #333;
+}
+
+.nav-active{
+    background-color: #ddd;
+    color: black;
+}
+
+.comments-title {
+  text-decoration: underline;
+  text-align: center;
+}

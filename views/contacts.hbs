@@ -1,0 +1,56 @@
+<head>
+    {{>style}}
+    <script src="script/load_time.js"></script>
+    <script src="script/active_menu.js"></script>
+    <style>
+        .body-contacts {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .contact-info {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .contact-label {
+            width: 100px;
+            font-weight: bold;
+        }
+        .contact-value {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="body-contacts">
+{{> header}}
+<h1>Контакты</h1>
+
+<div class="contact-info">
+    <span class="contact-label">Имя:</span>
+    <span class="contact-value">Arseniy Gumarov</span>
+</div>
+
+<div class="contact-info">
+    <span class="contact-label">Email:</span>
+    <span class="contact-value">w311gg@gmail.com</span>
+</div>
+
+<div class="contact-info">
+    <span class="contact-label">Телефон:</span>
+    <span class="contact-value">+7 (228) 322-1337</span>
+</div>
+
+<div class="contact-info">
+    <span class="contact-label">Адрес:</span>
+    <span class="contact-value">г. Санкт-Петербург, Сытнинский рынок</span>
+</div>
+<section class="section_load_time">
+    <h3 class="time_title">Страница загрузилась всего за:</h3>
+    <p class="time__duration"></p>
+</section>
+</body>
+<footer>
+    {{>footer}}
+</footer>

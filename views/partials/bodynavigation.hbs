@@ -1,0 +1,20 @@
+<section class="news">
+    <h2>Основные новости</h2>
+    <a class="sports">Последние события</a>
+    {{#if isFootball}}
+        <a class="sports football" href="football">Футбол</a>
+    {{else}}
+        <a class="sports football" href="football">Футбол</a>
+    {{/if}}
+    <a class="sports">Баскетбол</a>
+    <a class="sports">Хоккей</a>
+    <a class="sports">Воллейбол</a>
+</section>
+<section class="cyber">
+    <h2>Киберспорт</h2>
+    {{#if isCyber}}
+        <a class="cyber_item" href="cyber"> Новости о виртуальном спорте</a>
+    {{else}}
+        <a class="cyber_item" href="cyber"> Новости о виртуальном спорте</a>
+    {{/if}}
+</section>

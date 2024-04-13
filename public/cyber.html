@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<style>
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+    #preloader {
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #3498db;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+    }
+</style>
+<head>
+    <script src="./script/load_time.js"></script>
+    <script src="./script/dataLoader.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Новости о киберспорте</title>
+</head>
+<body class="body">
+<header class="header">
+    <img class="homepage_logo" src="logo.png"  alt="error">
+    <h1 class="heading_name">Sportnews</h1>
+    <p><em>always in game</em></p>
+    <div class="social_links">
+        <a class="social_item" href="#">Insta</a>
+        <a class="social_item" href="#">Twitter</a>
+        <a class="social_item" href="#">Facebook</a>
+        <a class="social_item" href="#">VK</a>
+        <a class="social_item" href="#">  +7 (228) 322 13 37</a>
+    </div>
+    <nav class="navigation">
+        <ul class="homepage_navigation">
+            <li class="homepage_navigation_list"><a class="homepage_navigation_list_item" href="index2.html">Главная</a></li>
+            <li class="homepage_navigation_list"><a class="homepage_navigation_list_item" href="contacts.html">Контакты</a></li>
+            <li class="homepage_navigation_list"><a class="homepage_navigation_list_item" href="todo.html">Голосование</a></li>
+            <li class="homepage_navigation_list"><a class="homepage_navigation_list_item" href="#">Поиск</a></li>
+            <li class="homepage_navigation_list"><a class="homepage_navigation_list_item" href="#">О нас</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <section class="news-section">
+        <div class="news-item">
+            <h2 class="news-title">Крупный турнир по Dota 2</h2>
+            <img class="news-image" src="img/dota2.png" alt="Dota 2 Tournament"><h1>Dota 2</h1>
+            <p class="news-content">Состоялся крупный турнир по игре Dota 2, где сильнейшие команды со всего мира сражались за призовой фонд в $3 миллиона. В итоге победу одержала команда Team Spirit, показав великолепную игру и стратегию.</p>
+            <img class="news_content_image" src="img/spirit.jpg" alt="Dota 2 Tournament">
+        </div>
+        <div class="news-item">
+            <h2 class="news-title">Новый сезон Overwatch League</h2>
+            <img class="news-image" src="img/Overwatch_2_logo.svg.png" alt="Overwatch League"><H1>Overwatch</H1>
+            <p class="news-content">Начался новый сезон Overwatch League, где восемь команд будут соревноваться за звание чемпиона. Ожидается, что матчи будут ожесточенными и напряженными, а зрители смогут насладиться невероятной игрой и эмоциями.</p>
+            <img class="news_content_image" src="img/overwatch-section1-feature1.avif" alt="404">
+        </div>
+    </section>
+    <section class="comments-section">
+        <h2 class="comments-title">Комментарии</h2>
+        <ul id="comments-list" class="comments-list">
+            <div id="userList"></div>
+            <div id="preloader" style="border: 16px solid #f3f3f3;
+     border-top: 16px solid #3498db;
+     border-radius: 50%;
+     width: 120px;
+     height: 120px;
+     animation: spin 2s linear infinite;"></div>
+            <template id="userTemplate">
+                <div class="user">
+                    <p class="email"></p>
+                    <p class="theme"></p>
+                    <p class="comment"></p>
+                </div>
+            </template>
+            <button id="refresh" class="button" style="display: none;">Обновить комментарии</button>
+        </ul>
+    </section>
+    <section class="section_load_time">
+        <h3 class="time_title">Страница загрузилась всего за:</h3>
+        <p class="time__duration"></p>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2023 made by w311</p>
+    <img class="social_img" src="img/insta.png" alt="Instagram">
+    <img class="social_img" src="img/twitter.png" alt="Twitter">
+    <img class="social_img" src="img/facebook.png" alt="Facebook">
+    <img class="social_img" src="img/VK_Logo.png" alt="VKontakte">
+    <img class="social_img" src="img/phone.png" alt="Contact">
+</footer>
+</body>
+</html>

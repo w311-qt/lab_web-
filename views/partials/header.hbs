@@ -1,0 +1,71 @@
+<header class="header">
+    <img class="homepage_logo" src="../logo.png" alt="error">
+    <h1 class="heading_name">Sportnews</h1>
+    <p><em>always in game</em></p>
+    <div class="social_links">
+        <a class="social_item" href="#">Insta</a>
+        <a class="social_item" href="#">Twitter</a>
+        <a class="social_item" href="#">Facebook</a>
+        <a class="social_item" href="#">VK</a>
+        <a class="social_item" href="#">+7 (228) 322 13 37</a>
+    </div>
+    <nav class="navigation">
+        {{#if isGeneral}}
+            <ul class="navigation__list">
+                <li class="navigation_item"><a href="..">Главная</a>  </li>
+            </ul>
+        {{else}}
+            <ul class="navigation__list">
+                <li class="navigation_item"><a href="..">Главная</a>  </li>
+            </ul>
+        {{/if}}
+
+
+
+
+        {{#if isContacts}}
+            <ul class="navigation__list">
+                <li class="navigation_item"><a href="contacts">Контакты</a>  </li>
+            </ul>
+        {{else}}
+            <ul class="navigation__list">
+            <li class="navigation_item"><a href="contacts">Контакты</a>  </li>
+        </ul>
+        {{/if}}
+
+
+
+        {{#if isVote}}
+            <ul class="navigation__list">
+                <li class="navigation_item"><a href="vote">Голосование</a>  </li>
+            </ul>
+        {{else}}
+            <ul class="navigation__list">
+                <li class="navigation_item"><a href="vote">Голосование</a>  </li>
+            </ul>
+        {{/if}}
+
+
+        {{#if isLoggedIn}}
+            {{#if isProfile}}
+                <ul class="navigation__list">
+                    <li class="navigation_item"><a href="profile">Profile</a>  </li>
+                </ul>
+            {{else}}
+                <ul class="navigation__list">
+                    <li class="navigation_item"><a href="profile">Profile</a>  </li>
+                </ul>
+            {{/if}}
+        {{else}}
+            {{#if isLogin}}
+                <ul class="navigation__list">
+                    <li class="navigation_item"><a href="loginuser">Login</a>  </li>
+                </ul>
+            {{else}}
+                <ul class="navigation__list">
+                    <li class="navigation_item"><a href="loginuser">Login</a>  </li>
+                </ul>
+            {{/if}}
+        {{/if}}
+    </nav>
+</header>
